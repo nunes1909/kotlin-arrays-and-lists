@@ -1,4 +1,9 @@
+import FuncAgregacao.valoresBigDecimal
+
 fun main() {
 //    arrayIdades()
-    alterandoElementos()
+//    alterandoElementos()
+//    ranges()
+//    idades()
+    valoresBigDecimal()
 }
