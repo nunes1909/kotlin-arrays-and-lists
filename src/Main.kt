@@ -1,5 +1,7 @@
 import FuncoesCompostas.operacoesCompostas
 import Listas.listaLivros
+import ProblemasComuns.listaLivrosNull
+import ProblemasComuns.usaPrateleira
 
 fun main() {
 //    arrayIdades()
@@ -8,5 +10,7 @@ fun main() {
 //    idades()
 //    valoresBigDecimal()
 //    operacoesCompostas()
-    listaLivros()
+//    listaLivros()
+//    listaLivrosNull()
+    usaPrateleira()
 }
