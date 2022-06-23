@@ -1,6 +1,10 @@
-package Listas
+package ProblemasComuns
 
-fun listaLivros() {
+import Listas.Livro
+import Listas.imprime
+
+fun usaPrateleira(){
+
     val livro1 = Livro(
         titulo = "Grande sertão",
         autor = "Joao Guimaraes",
@@ -30,22 +34,18 @@ fun listaLivros() {
         editora = "Editora City"
     )
 
-    val listaDeLivros: MutableList<Livro> = mutableListOf(livro1, livro2, livro3, livro4, livro5)
-    listaDeLivros
-//        .imprime()
+    val lista: MutableList<Livro> = mutableListOf(livro1, livro2, livro3, livro4, livro5)
 
-    listaDeLivros.sortedBy { it!!.titulo }
-        .toMutableList()
-//        .imprime()
+    val prateleira = Prateleira(
+        genero = "Literatura",
+        livros = lista
+    )
 
-    listaDeLivros
-        .filter { it!!.autor.startsWith("Gabriel") }
-        .sortedBy { it?.autor }
-        .toMutableList()
-//        .imprime()
+    prateleira.organizaPorAutor().imprime()
+    prateleira.organizaPorAno().imprime()
 }
 
-fun MutableList<Livro>.imprime() {
+fun List<Livro>.imprime() {
     val livroFormatado = this
         .filterNotNull()
         .joinToString(separator = "\n") {
