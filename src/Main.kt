@@ -1,4 +1,5 @@
 import FuncoesCompostas.operacoesCompostas
+import Listas.listaLivros
 
 fun main() {
 //    arrayIdades()
@@ -7,4 +8,5 @@ fun main() {
 //    idades()
 //    valoresBigDecimal()
 //    operacoesCompostas()
+    listaLivros()
 }
